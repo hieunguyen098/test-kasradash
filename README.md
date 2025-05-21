@@ -1,36 +1,158 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Kasra Dashboard
+
+A modern dashboard built with Next.js, Shadcn UI, and TypeScript. This project demonstrates the implementation of a responsive dashboard with form validation, state management, and dark mode support.
+
+## Features
+
+- 🎨 Modern UI with Shadcn UI components
+- 🌓 Dark mode support with system preference detection
+- 📱 Fully responsive design with mobile-first approach
+- 📊 Interactive dashboard with statistics and analytics
+- 📝 Form validation with React Hook Form + Zod
+- 💾 State management with Zustand
+- 🔒 Form state persistence across sessions
+- 👤 User profile display in header
+- ✅ Success notifications for form submissions
+
+## Tech Stack
+
+- **Framework**: Next.js 14 with App Router
+- **Styling**: Tailwind CSS
+- **UI Components**: Shadcn UI
+- **Form Handling**: React Hook Form + Zod
+- **State Management**: Zustand with persistence
+- **Theme**: next-themes for dark mode
+- **Icons**: Lucide React
+- **Type Safety**: TypeScript
 
 ## Getting Started
 
-First, run the development server:
+1. Clone the repository:
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+   ```bash
+   git clone https://github.com/hieunguyen098/test-kasradash.git
+   cd test-kasradash
+   ```
+
+2. Install dependencies:
+
+   ```bash
+   npm install
+   ```
+
+3. Run the development server:
+
+   ```bash
+   npm run dev
+   ```
+
+4. Open [http://localhost:3000](http://localhost:3000) in your browser.
+
+## Demo
+
+- 🌐 **Live Demo**: [https://kasra-dashboard.vercel.app](https://kasra-dashboard.vercel.app)
+- 📦 **GitHub Repository**: [https://github.com/hieunguyen098/test-kasradash.git](https://github.com/hieunguyen098/test-kasradash.git)
+
+## Project Structure
+
+```
+src/
+├── app/                    # Next.js app router pages
+│   ├── page.tsx           # Dashboard page
+│   └── settings/          # Settings page
+├── components/            # React components
+│   ├── dashboard/        # Dashboard components
+│   │   ├── stat-card.tsx    # Statistics card
+│   │   ├── list-card.tsx    # List display card
+│   │   └── analytics-dialog.tsx # Analytics modal
+│   ├── settings/         # Settings components
+│   │   ├── form-field.tsx    # Form field component
+│   │   └── success-dialog.tsx # Success notification
+│   ├── ui/               # Shadcn UI components
+│   ├── theme-provider.tsx # Theme provider
+│   ├── theme-toggle.tsx   # Dark mode toggle
+│   └── user-info.tsx     # User profile display
+└── lib/                  # Utilities and store
+    └── store.ts          # Zustand store with persistence
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Features in Detail
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Dashboard
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- Responsive grid layout with statistics cards
+- List cards showing various metrics with trends
+- Interactive analytics dialog
+- Real-time data updates
+- Mobile-optimized layout
 
-## Learn More
+### Settings
 
-To learn more about Next.js, take a look at the following resources:
+- Form validation with error messages
+- Persistent form state
+- Success notifications
+- Responsive form layout
+- Password field with secure input
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### User Experience
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- Dark mode support with system preference
+- Persistent user preferences
+- Responsive navigation
+- User profile display in header
+- Smooth transitions and animations
 
-## Deploy on Vercel
+### State Management
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- Zustand for global state
+- Persistent storage for user data
+- Type-safe state updates
+- Efficient re-rendering
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Best Practices Implemented
+
+1. **Component Structure**
+
+   - Modular and reusable components
+   - Clear separation of concerns
+   - Type-safe props and state
+   - Consistent naming conventions
+
+2. **Type Safety**
+
+   - Full TypeScript implementation
+   - Zod schema validation
+   - Type-safe form handling
+   - Proper error handling
+
+3. **Accessibility**
+
+   - Semantic HTML
+   - ARIA labels
+   - Keyboard navigation
+   - Screen reader support
+
+4. **Responsive Design**
+
+   - Mobile-first approach
+   - Flexible grid layouts
+   - Responsive typography
+   - Proper spacing on all devices
+
+5. **Code Organization**
+   - Feature-based structure
+   - Clear file naming
+   - Consistent code style
+   - Proper documentation
+
+## Assumptions and Shortcuts
+
+1. **Mock Data**: The dashboard uses static mock data for demonstration
+2. **Authentication**: No authentication system implemented
+3. **API Integration**: No backend API integration
+4. **Data Refresh**: No real-time data updates
+5. **Error Handling**: Basic error handling for form validation
+
+## License
+
+MIT
