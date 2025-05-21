@@ -25,6 +25,11 @@ A modern dashboard built with Next.js, Shadcn UI, and TypeScript. This project d
 - **Icons**: Lucide React
 - **Type Safety**: TypeScript
 
+## Demo
+
+- 🌐 **Live Demo**: [https://test-kasradash.vercel.app](https://test-kasradash.vercel.app)
+- 📦 **GitHub Repository**: [https://github.com/hieunguyen098/test-kasradash.git](https://github.com/hieunguyen098/test-kasradash.git)
+
 ## Getting Started
 
 1. Clone the repository:
@@ -47,11 +52,6 @@ A modern dashboard built with Next.js, Shadcn UI, and TypeScript. This project d
    ```
 
 4. Open [http://localhost:3000](http://localhost:3000) in your browser.
-
-## Demo
-
-- 🌐 **Live Demo**: [https://kasra-dashboard.vercel.app](https://kasra-dashboard.vercel.app)
-- 📦 **GitHub Repository**: [https://github.com/hieunguyen098/test-kasradash.git](https://github.com/hieunguyen098/test-kasradash.git)
 
 ## Project Structure
 
